@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<form action="{% url 'home' %}" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+        <input name="nome" type="text" class="form-control form-control-sm" id="input_name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Idade</label>
+        <input name="idade" type="number" class="form-control form-control-sm" id="input_years_old">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input name="email"  type="email" class="form-control form-control-sm" id="input_email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+</form>
+{% endblock %}
