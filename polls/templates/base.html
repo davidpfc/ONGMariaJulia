@@ -52,6 +52,41 @@
     {% block conteudo %}
     {% endblock %}
 
+    <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="container py-1 px-2">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 mb-2">
+            <h6 class="text-uppercase mb-1">Grupo Fraternal Maria Julia</h6>
+            <p class="mb-1 small">
+                Atuando desde 1993 em prol de quem mais precisa.
+                Solidariedade, empatia e amor ao próximo.
+            </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-2">
+            <h6 class="text-uppercase mb-1">Links úteis</h6>
+            <ul class="list-unstyled mb-1 small">
+                <li><a href="{% url 'home' %}" class="text-dark">Home</a></li>
+                <li><a href="{% url 'cadastro' %}" class="text-dark">Cadastro</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-2">
+            <h6 class="text-uppercase mb-1">Contato</h6>
+            <ul class="list-unstyled mb-1 small">
+                <li><span class="text-dark">Email: contato@ongmariajulia.org</span></li>
+                <li><span class="text-dark">Telefone: (11) 99999-9999</span></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="text-center p-2 bg-dark text-white">
+            © 2025 Grupo Fraternal Maria Julia. Todos os direitos reservados.
+        </div>
+    </footer>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
