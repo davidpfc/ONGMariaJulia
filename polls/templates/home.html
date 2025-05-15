@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+<!-- carregando imagens -->
+{% load static %} 
+
 {% block conteudo %}
 <div class="container my-5">
     <div class="row justify-content-center">
@@ -11,7 +14,7 @@
     
     <!-- Coluna de Imagem -->
     <div class="col-md-6 d-flex justify-content-center align-items-center">
-        <img src="sua-imagem.jpg" class="img-fluid" alt="Imagem">
+        <img src="{% static 'representacao_3.jpeg' %}" class="img-fluid" alt="Imagem">
     </div>
     </div>
 </div>
