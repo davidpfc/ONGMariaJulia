@@ -8,13 +8,17 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
+                            <th>Posição</th>
                             <th>Nome do Doador</th>
+                            <th>Valor Doado</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for doador in doadores %}
                         <tr>
+                            <td>{{ forloop.counter }}</td>
                             <td>{{ doador.nome }}</td>
+                            <td>{{ doador.valor }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>

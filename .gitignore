@@ -2,5 +2,5 @@ venv
 docs
 docs/Pasta 1
 polls/__pycache__
-migrations/__pycache__
+polls/migrations/__pycache__
 siteong/__pycache__
