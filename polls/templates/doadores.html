@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block conteudo %}
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-center mb-4">Top Doadores</h1>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nome do Doador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for doador in doadores %}
+                        <tr>
+                            <td>{{ doador.nome }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
